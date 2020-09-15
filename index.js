@@ -27,9 +27,7 @@ const categoriesToDisplay = ['Date', 'Type', 'Location'];
         var crimes = response;
         tableBody.innerHTML = "";
         console.log(response);
-        
-
-        var date = document.createElement("tr");
+       
     
     
 
