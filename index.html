@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Händelser</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Events Stockholm</h1>
+
+        <hr class="my-4">
+        <p>Look at all the police events in Stockholm.</p>
+
+        <input class="w-25 form-control form-control-lg mb-2" type="text" value="Stockholm" id="textInputCategory" />
+    <button class="btn btn-primary btn-lg" id="getButton" onClick="onClick()">Show Events</button>
+    </div>
+
+    
+    
+
+    <section class="container">
+        <table class="table" id="crimeTable" style="color: black;">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Location</th>
+                </tr> 
+            </thead>
+            <tbody id="crimeTableBody"></tbody>
+        </table>
+    </section>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
